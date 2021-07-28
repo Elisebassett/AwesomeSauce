@@ -3,15 +3,15 @@ package AwesomeSauce;
 public class App {
     public static void main(String[] args) {
         App app = new App();
-        for (int i = 0; i < 101; i++) {
+        for (int i = 1; i < 101; i++) {
             System.out.println(app.awesomeSauce("Awesome", "Sauce", i));
         }
     }
 
-    public String awesomeSauce(String awesome, String sauce, Integer i) {
+    public String awesomeSauce(String awesome, String sauce, int i) {
         
-        Boolean three_multiple = i % 3 == 0;
-        Boolean five_multiple = i % 5 == 0;
+        boolean three_multiple = i % 3 == 0;
+        boolean five_multiple = i % 5 == 0;
 
         if (three_multiple && five_multiple) {
            return awesome + sauce;
